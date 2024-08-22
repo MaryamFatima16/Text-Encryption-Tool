@@ -14,23 +14,23 @@ A simple GUI application for text encryption and decryption using AES, DES, and 
 *GUI Window.*
 
 
-![AES Encryption](screenshots/AES Encryption.png)
+![AES Encryption](screenshots/AES Encryption.png) 
 *Encrypting text using AES encryption.*
 
-![DES Encryption](screenshots/DES Encryption.png)
+![AES Decryption](screenshots/AES decryption.png) 
+*Decrypting text using AES decryption.*
+
+![DES Encryption](screenshots/DES encryption.png) 
 *Encrypting text using DES encryption.*
 
-![RSA Encryption](screenshots/RSA Encryption.png)
+![DES Decryption](screenshots/DES decryption.png) 
+*Decrypting text using DES decryption.*
+
+![RSA Encryption](screenshots/RSA Encryption.png) 
 *Encrypting text using RSA encryption.*
 
-![AES Decryption](screenshots/AES Decryption.png)
-*Decryption text using AES decryption.*
-
-![DES Decryption](screenshots/DES Decryption.png)
-*Decryption text using DES decryption.*
-
-![RSA Decryption](screenshots/RSA Decryption.png)
-*Decryption text using RSA decryption.*
+![RSA Decryption](screenshots/RSA-Decryption.png) 
+*Decrypting text using RSA decryption.*
 
 
 ## Installation
