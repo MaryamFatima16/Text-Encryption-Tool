@@ -4,19 +4,28 @@ A simple GUI application for text encryption and decryption using AES, DES, and 
 
 ## Features
 
-- **Encryption and Decryption**:
-  - **AES** (Advanced Encryption Standard)
-  - **DES** (Data Encryption Standard)
-  - **RSA** (Rivest–Shamir–Adleman)
+- **Encryption & Decryption**: Supports AES, DES, and RSA encryption algorithms.
+- **RSA Key Display**: View and copy the RSA public key in PEM format.
+- **Intuitive GUI**: Easy-to-use interface for quick text encryption and decryption.
 
-- **RSA Public Key Display**: Displays the RSA public key in PEM format.
+## Screenshots
+
+![Main Window](screenshots/main_window.png)
+*The main interface of the Text Encryption Tool.*
+
+![Encryption Example](screenshots/encryption_example.png)
+*Encrypting text using AES encryption.*
+
+![Decryption Example](screenshots/decryption_example.png)
+*Decrypting text using RSA encryption.*
+
 
 ## Installation
 
 1. **Clone the Repository**:
     ```sh
-    git clone https://github.com/your-username/text-encryption-tool.git
-    cd text-encryption-tool
+    git clone https://github.com/MaryamFatima16/Text-Encryption-Tool.git
+    cd Text-Encryption-Tool
     ```
 
 2. **Install Required Packages**:
@@ -51,15 +60,6 @@ A simple GUI application for text encryption and decryption using AES, DES, and 
 - **DES Decryption**: Convert the encrypted text (hex) back to plaintext.
 - **RSA Decryption**: Convert the encrypted text (hex) back to plaintext.
 
-## Example
-
-- **AES Encryption**: Enter text, select AES, click "Encrypt". The result will be displayed as a hexadecimal string.
-- **DES Encryption**: Enter text, select DES, click "Encrypt". The result will be displayed as a hexadecimal string.
-- **RSA Encryption**: Enter text, select RSA, click "Encrypt". The result will be displayed as a hexadecimal string.
-
-- **AES Decryption**: Enter the encrypted text (hex), select AES, click "Decrypt". The original text will be displayed.
-- **DES Decryption**: Enter the encrypted text (hex), select DES, click "Decrypt". The original text will be displayed.
-- **RSA Decryption**: Enter the encrypted text (hex), select RSA, click "Decrypt". The original text will be displayed.
 
 ## Notes
 
