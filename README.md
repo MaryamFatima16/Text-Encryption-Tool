@@ -10,7 +10,7 @@ A simple GUI application for text encryption and decryption using AES, DES, and 
 
 ## Screenshots
 
-![Main Window](screenshots/main_window.png)
+![Main Window]("C:\Users\Maryam\Pictures\Screenshots\AES Encryption.png")
 *The main interface of the Text Encryption Tool.*
 
 ![Encryption Example](screenshots/encryption_example.png)
