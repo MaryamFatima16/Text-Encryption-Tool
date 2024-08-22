@@ -5,19 +5,26 @@ from cryptography.hazmat.primitives.asymmetric import rsa, padding
 from cryptography.hazmat.primitives import hashes, serialization
 from cryptography.hazmat.backends import default_backend
 
-# Initialize keys
+# Initialize backend and keys
 backend = default_backend()
 aes_key = b'0011223344556677'  # Example AES key (16 bytes)
 des_key = b'0102030405060708'  # Example DES key (8 bytes)
 rsa_key = rsa.generate_private_key(public_exponent=65537, key_size=2048, backend=backend)
 
 def aes_encrypt(text):
+    """
+    Encrypts text using AES encryption in ECB mode.
+    """
     cipher = Cipher(algorithms.AES(aes_key), modes.ECB(), backend=backend)
     encryptor = cipher.encryptor()
+    # Pad text to be multiple of AES block size (16 bytes)
     padded_text = text + (16 - len(text) % 16) * chr(16 - len(text) % 16)
     return encryptor.update(padded_text.encode()) + encryptor.finalize()
 
 def aes_decrypt(ciphertext):
+    """
+    Decrypts text using AES decryption in ECB mode.
+    """
     cipher = Cipher(algorithms.AES(aes_key), modes.ECB(), backend=backend)
     decryptor = cipher.decryptor()
     padded_text = decryptor.update(ciphertext) + decryptor.finalize()
@@ -25,12 +32,19 @@ def aes_decrypt(ciphertext):
     return padded_text[:-padding_len].decode()
 
 def des_encrypt(text):
+    """
+    Encrypts text using DES encryption in ECB mode.
+    """
     cipher = Cipher(algorithms.TripleDES(des_key), modes.ECB(), backend=backend)
     encryptor = cipher.encryptor()
+    # Pad text to be multiple of DES block size (8 bytes)
     padded_text = text + (8 - len(text) % 8) * chr(8 - len(text) % 8)
     return encryptor.update(padded_text.encode()) + encryptor.finalize()
 
 def des_decrypt(ciphertext):
+    """
+    Decrypts text using DES decryption in ECB mode.
+    """
     cipher = Cipher(algorithms.TripleDES(des_key), modes.ECB(), backend=backend)
     decryptor = cipher.decryptor()
     padded_text = decryptor.update(ciphertext) + decryptor.finalize()
@@ -38,6 +52,9 @@ def des_decrypt(ciphertext):
     return padded_text[:-padding_len].decode()
 
 def rsa_encrypt(text):
+    """
+    Encrypts text using RSA encryption.
+    """
     public_key = rsa_key.public_key()
     ciphertext = public_key.encrypt(
         text.encode(),
@@ -46,6 +63,9 @@ def rsa_encrypt(text):
     return ciphertext
 
 def rsa_decrypt(ciphertext):
+    """
+    Decrypts text using RSA decryption.
+    """
     plaintext = rsa_key.decrypt(
         ciphertext,
         padding.OAEP(mgf=padding.MGF1(algorithm=hashes.SHA256()), algorithm=hashes.SHA256(), label=None)
@@ -53,6 +73,9 @@ def rsa_decrypt(ciphertext):
     return plaintext.decode()
 
 def encrypt_text():
+    """
+    Encrypts text based on the selected encryption method and displays the result.
+    """
     text = text_entry.get("1.0", tk.END).strip()
     if encryption_method.get() == "AES":
         encrypted = aes_encrypt(text)
@@ -68,6 +91,9 @@ def encrypt_text():
         result_text.insert(tk.END, encrypted.hex())
 
 def decrypt_text():
+    """
+    Decrypts text based on the selected encryption method and displays the result.
+    """
     text = text_entry.get("1.0", tk.END).strip()
     try:
         ciphertext = bytes.fromhex(text)
@@ -87,6 +113,9 @@ def decrypt_text():
         messagebox.showerror("Error", str(e))
 
 def show_public_key():
+    """
+    Displays the public RSA key in PEM format.
+    """
     public_key = rsa_key.public_key()
     try:
         public_key_pem = public_key.public_bytes(
