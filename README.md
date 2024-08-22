@@ -12,27 +12,42 @@ A simple GUI application for text encryption and decryption using AES, DES, and 
 
 ## Screenshots
 
-<img src="screenshots/GUI-window.png" alt="GUI Window" width="600"/>
-*GUI Window.*
+## Screenshots
 
-<img src="screenshots/AES-Encryption.png" alt="AES Encryption" width="600"/>
-*Encrypting text using AES encryption.*
+<p align="center">
+  <img src="screenshots/GUI-window.png" alt="GUI Window" width="400"/>
+  <br/><i>GUI Window.</i>
+</p>
 
-<img src="screenshots/AES-decryption.png" alt="AES Decryption" width="600"/>
-*Decrypting text using AES decryption.*
+<p align="center">
+  <img src="screenshots/AES-Encryption.png" alt="AES Encryption" width="400"/>
+  <br/><i>Encrypting text using AES encryption.</i>
+</p>
 
-<img src="screenshots/DES-encryption.png" alt="DES Encryption" width="600"/>
-*Encrypting text using DES encryption.*
+<p align="center">
+  <img src="screenshots/AES-decryption.png" alt="AES Decryption" width="400"/>
+  <br/><i>Decrypting text using AES decryption.</i>
+</p>
 
-<img src="screenshots/DES-decryption.png" alt="DES Decryption" width="600"/>
-*Decrypting text using DES decryption.*
+<p align="center">
+  <img src="screenshots/DES-encryption.png" alt="DES Encryption" width="400"/>
+  <br/><i>Encrypting text using DES encryption.</i>
+</p>
 
-<img src="screenshots/RSA-Encryption.png" alt="RSA Encryption" width="600"/>
-*Encrypting text using RSA encryption.*
+<p align="center">
+  <img src="screenshots/DES-decryption.png" alt="DES Decryption" width="400"/>
+  <br/><i>Decrypting text using DES decryption.</i>
+</p>
 
-<img src="screenshots/RSA-Decryption.png" alt="RSA Decryption" width="600"/>
-*Decrypting text using RSA decryption.*
+<p align="center">
+  <img src="screenshots/RSA-Encryption.png" alt="RSA Encryption" width="400"/>
+  <br/><i>Encrypting text using RSA encryption.</i>
+</p>
 
+<p align="center">
+  <img src="screenshots/RSA-Decryption.png" alt="RSA Decryption" width="400"/>
+  <br/><i>Decrypting text using RSA decryption.</i>
+</p>
 
 ## Installation
 
