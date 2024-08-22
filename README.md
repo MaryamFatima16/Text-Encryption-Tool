@@ -10,10 +10,6 @@ A simple GUI application for text encryption and decryption using AES, DES, and 
 
 ## Screenshots
 
-## Screenshots
-
-## Screenshots
-
 <p align="center">
   <img src="screenshots/GUI-window.png" alt="GUI Window" width="400"/>
   <br/><i>GUI Window.</i>
