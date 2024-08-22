@@ -10,14 +10,27 @@ A simple GUI application for text encryption and decryption using AES, DES, and 
 
 ## Screenshots
 
-![Main Window]("C:\Users\Maryam\Pictures\Screenshots\AES Encryption.png")
-*The main interface of the Text Encryption Tool.*
+![GUI window](screenshots/GUI window.png)
+*GUI Window.*
 
-![Encryption Example](screenshots/encryption_example.png)
+
+![AES Encryption](screenshots/AES Encryption.png)
 *Encrypting text using AES encryption.*
 
-![Decryption Example](screenshots/decryption_example.png)
-*Decrypting text using RSA encryption.*
+![DES Encryption](screenshots/DES Encryption.png)
+*Encrypting text using DES encryption.*
+
+![RSA Encryption](screenshots/RSA Encryption.png)
+*Encrypting text using RSA encryption.*
+
+![AES Decryption](screenshots/AES Decryption.png)
+*Decryption text using AES decryption.*
+
+![DES Decryption](screenshots/DES Decryption.png)
+*Decryption text using DES decryption.*
+
+![RSA Decryption](screenshots/RSA Decryption.png)
+*Decryption text using RSA decryption.*
 
 
 ## Installation
