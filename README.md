@@ -62,7 +62,7 @@ A simple GUI application for text encryption and decryption using AES, DES, and 
 3. **Run the Application**:
     Execute the script:
     ```sh
-    python encryption_tool.py
+    python text_encryption.py
     ```
 
 ## Usage
